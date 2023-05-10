@@ -41,7 +41,49 @@ function App() {
     },
   ];
   return (
-    <div className='m-auto w-9/12'>
+    <div className='container grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+    <div style={{ width: '100%', height: 300 }}>
+      <ResponsiveContainer>
+    <LineChart data={data} margin={{
+              top: 10,
+              right: 30,
+              left: 30,
+              bottom: 30,
+            }}>
+        <Line dataKey={"revenue"}></Line>
+        <XAxis dataKey={"month"}></XAxis>
+        <YAxis dataKey={"investment"}></YAxis>
+      </LineChart>
+      </ResponsiveContainer>
+    </div>
+    <div style={{ width: '100%', height: 300 }}>
+      <ResponsiveContainer>
+    <LineChart data={data} margin={{
+              top: 10,
+              right: 30,
+              left: 30,
+              bottom: 30,
+            }}>
+        <Line dataKey={"revenue"}></Line>
+        <XAxis dataKey={"month"}></XAxis>
+        <YAxis dataKey={"investment"}></YAxis>
+      </LineChart>
+      </ResponsiveContainer>
+    </div>
+    <div style={{ width: '100%', height: 300 }}>
+      <ResponsiveContainer>
+    <LineChart data={data} margin={{
+              top: 10,
+              right: 30,
+              left: 30,
+              bottom: 30,
+            }}>
+        <Line dataKey={"revenue"}></Line>
+        <XAxis dataKey={"month"}></XAxis>
+        <YAxis dataKey={"investment"}></YAxis>
+      </LineChart>
+      </ResponsiveContainer>
+    </div>
     <div style={{ width: '100%', height: 300 }}>
       <ResponsiveContainer>
     <LineChart data={data} margin={{
